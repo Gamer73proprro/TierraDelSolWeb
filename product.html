@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Kit - Tierra Del Sol Unturned</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tierra Del Sol<span class="accent">.</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#" class="active">Tienda</a></li>
+                    <li><a href="#">Kits</a></li>
+                    <li><a href="https://discord.gg/CN2B2Z494u" target="_blank">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a> / <a href="index.html">Kits</a> / <span id="product-title-breadcrumb">Nombre del Kit</span>
+            </div>
+            
+            <div class="product-wrapper">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="product-main-image" src="" alt="Imagen del Kit">
+                    </div>
+                </div>
+                
+                <div class="product-info-detail">
+                    <h1 id="product-title">Nombre del Kit</h1>
+                    
+                    <div class="product-meta">
+                        <div class="product-rating" id="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-price" id="product-price">$14.99</div>
+                    
+                    <div class="product-description">
+                        <p id="product-desc">
+                            Kit de supervivencia premium para Unturned con objetos y armas exclusivas para 
+                            darte una ventaja competitiva en el apocalipsis zombie.
+                        </p>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Añadir al Carrito
+                        </button>
+                        
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-details-tab">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="description">Descripción</button>
+                            <button class="tab-btn" data-tab="specifications">Contenido del Kit</button>
+                            <button class="tab-btn" data-tab="reviews">Reseñas</button>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="description">
+                                <p>
+                                    Este kit premium de Unturned te da acceso instantáneo a objetos de alto nivel que 
+                                    normalmente llevaría horas de juego conseguir. Adelántate a la competencia
+                                    con armas exclusivas, equipo y recursos.
+                                </p>
+                                <p>
+                                    Una vez comprado, el kit puede ser canjeado en el servidor de Tierra Del Sol Unturned 
+                                    utilizando tu código de activación único. El contenido del kit se renueva con cada reinicio del servidor.
+                                </p>
+                            </div>
+                            
+                            <div class="tab-pane" id="specifications">
+                                <ul class="specs-list" id="specs-container">
+                                    <!-- Kit contents will be loaded dynamically -->
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-pane" id="reviews">
+                                <div class="review-summary">
+                                    <h4>Opiniones de Jugadores</h4>
+                                    <p>Basado en 42 reseñas</p>
+                                </div>
+                                
+                                <div class="review">
+                                    <div class="review-header">
+                                        <span class="reviewer-name">CazadorDeZombies99</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="review-text">
+                                        ¡Kit increíble! Las armas son demasiado buenas y me ayudaron a dominar el servidor. ¡Vale cada centavo!
+                                    </p>
+                                </div>
+                                
+                                <div class="review">
+                                    <div class="review-header">
+                                        <span class="reviewer-name">MaestroDeLaSupervivencia</span>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p class="review-text">
+                                        Gran valor por lo que obtienes. Solo los objetos raros ya hacen que valga la pena.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="related-products">
+                <h2>Otros Kits Que Te Pueden Gustar</h2>
+                <div class="product-grid" id="related-products-grid">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tierra Del Sol Unturned. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
